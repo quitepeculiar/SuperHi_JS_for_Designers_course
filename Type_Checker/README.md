@@ -1,4 +1,4 @@
-# SuperHi_JS_for_Designers_course
+# SuperHi JavaScript for Designers Course: Type Checker
 
 Description from the website:
 
