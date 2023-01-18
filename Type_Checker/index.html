@@ -1,80 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<title>Type Checker</title>
+		<meta charset="utf-8">
+		<meta name="generator" content="SuperHi">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JS For Designers: Type Checker</title>
+		<link rel="stylesheet" href="/_base.css">
+		<link rel="stylesheet" href="/style.css">
 	</head>
-
-	<section class="options">
-		<h1>Type Checker</h1>
-
-		<div class="option">
-			<label>Your text</label>
-			<input type="text" name="sentence" placeholder="The quick brown fox..." />
-		</div>
-
-		<div class="option">
-			<label>Typeface</label>
-			<select name="typeface">
-				<option value="Faune">Faune</option>
-				<option value="Chivo Mono">Chivo Mono</option>
-				<option value="Overpass">Overpass</option>
-				<option value="Poppins">Poppins</option>
-				<option value="Raleway">Raleway</option>
-				<option value="Texturina">Texturina</option>
-			</select>
-		</div>
-
-		<div class="option">
-			<label>Type size <span class="typesize-output">64px</span></label>
-			<input type="range" name="typesize" min="12" max="200" value="64" />
-		</div>
-
-		<div class="option">
-			<label>Font weight<span class="fontweight-output">400</span></label>
-			<input
-				type="range"
-				name="fontweight"
-				min="100"
-				max="900"
-				value="400"
-				step="100"
-			/>
-		</div>
-
-		<div class="option">
-			<label>Leading<span class="lineheight-output">1.5</span></label>
-			<input
-				type="range"
-				name="lineheight"
-				min="0.75"
-				max="2.5"
-				value="1.5"
-				step="0.25"
-			/>
-		</div>
-
-		<div class="option option-checkbox">
-			<label>Italic</label>
-			<input type="checkbox" name="italic" />
-		</div>
-
-		<div class="option">
-			<label>Colors</label>
-			<div class="colors">
-				<div style="background-color: #2a2a2a; color: #ffffff" class="selected">
-					a
-				</div>
-				<div style="background-color: #ffffff; color: #2a2a2a">a</div>
-				<div style="background-color: #63ff03; color: #2a2a2a">a</div>
-				<div style="background-color: #ee0073; color: #ffffff">a</div>
-			</div>
-		</div>
-	</section>
-
-	<textarea class="output">
-The quick brown fox jumps over the lazy dog.</textarea
-	>
-
-	<script src="typechecker.js"></script>
+	<body>
+		<script src="/superhi.js"></script>
+		<section class="options">
+		  <h1>
+		    Type Checker
+		  </h1>
+		
+		  <div class="option">
+		    <label>Your text</label>
+		    <input type="text" name="sentence" placeholder="The quick brown fox...">
+		  </div>
+		
+		  <div class="option">
+		    <label>Typeface</label>
+		    <select name="typeface">
+		      <option value="Faune">Faune</option>
+		      <option value="Chivo Mono">Chivo Mono</option>
+		      <option value="Overpass">Overpass</option>
+		      <option value="Poppins">Poppins</option>
+		      <option value="Raleway">Raleway</option>
+		      <option value="Texturina">Texturina</option>
+		    </select>  
+		  </div>
+		
+		
+		  <div class="option">
+		    <label>Type size <span class="typesize-output">64px</span></label>
+		    <input type="range" name="typesize" min=12 max=200 value=64>
+		  </div>
+		
+		  <div class="option">
+		    <label>Font weight<span class="fontweight-output">400</span></label>
+		    <input type="range" name="fontweight" min=100 max=900 value=400 step=100>
+		  </div>
+		
+		  <div class="option">
+		    <label>Leading<span class="lineheight-output">1.5</span></label>
+		    <input type="range" name="lineheight" min=0.75 max=2.5 value=1.5 step=0.25>
+		  </div>
+		
+		  <div class="option option-checkbox">
+		    <label>Italic</label>
+		    <input type="checkbox" name="italic">
+		  </div>
+		
+		  <div class="option">
+		    <label>Colors</label>
+		    <div class="colors">
+		      <div style="background-color: #2a2a2a; color: #ffffff" class="selected">a</div>
+		      <div style="background-color: #ffffff; color: #2a2a2a">a</div>
+		      <div style="background-color: #63ff03; color: #2a2a2a">a</div>
+		      <div style="background-color: #ee0073; color: #ffffff">a</div>
+		    </div>
+		  </div>
+		
+		</section>
+		
+		
+		
+		
+		
+		<textarea class="output">The quick brown fox jumps over the lazy dog.</textarea>
+		
+		
+		<script src="typechecker.js"> </script>
+	</body>
 </html>

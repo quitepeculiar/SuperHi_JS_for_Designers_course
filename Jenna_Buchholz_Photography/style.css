@@ -1,13 +1,14 @@
 @font-face {
-	font-family: 'Hk Grotesk';
+	font-family: "Hk Grotesk";
 	src: url(hk-grotesk.woff2), url(hk-grotesk.woff);
 }
 
+
 body {
-	font-family: 'Hk Grotesk', Arial;
+	font-family: "Hk Grotesk", Arial;
 	font-size: 36px;
 	line-height: 1.25;
-
+	
 	background-color: #ffffff;
 	color: #333333;
 }
@@ -68,7 +69,7 @@ div.circle {
 	width: 100px;
 	height: 100px;
 	background-color: #5982a0;
-	position: absolute;
+	position:absolute;
 	bottom: 50px;
 	right: -50px;
 	border-radius: 50%;
@@ -104,6 +105,7 @@ section.s3 div.circle {
 	background-color: #6e5f67;
 }
 
+
 /* Section 4 settings */
 
 section.s4 {
@@ -117,3 +119,5 @@ section.s4 div.square {
 section.s4 div.circle {
 	background-color: #5982a0;
 }
+
+

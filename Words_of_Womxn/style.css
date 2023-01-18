@@ -1,0 +1,87 @@
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg);}
+  100% {transform: translate(-50%, -50%) rotate(360deg);}
+} 
+
+@font-face {
+  font-family: "Syne";
+  src: url(syne-regular.woff2), url(syne-regular.woff);
+}
+
+@font-face {
+  font-family: "Syne Extra";
+  src: url(syne-extra.woff2), url(syne-extra.woff);
+}
+
+body {
+	font-family: "Syne", Arial;
+	font-size: 32px;
+	line-height: 1.25;
+	
+	background-color: #f4e6d8;
+	color: #15403d;
+	margin: 240px auto 240px auto;
+	max-width: 1120px;
+  
+  overflow-x: hidden;
+  
+  transition: background-color 0.5s;
+}
+
+p {
+  font-family: "Syne Extra", Arial;
+  color: #e5745d;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 32px;
+  text-align: center;
+  z-index: 1;
+}
+
+header img {
+  width: 136px;
+  transition: width 0.5s;
+}
+
+header.scrolled img {
+  width: 64px;
+}
+
+section {
+  margin: 80px 0 80px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+section div {
+  padding: 40px;
+  position: relative;
+}
+
+section img {
+  position: relative;
+}
+
+div.stamps {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+}
+
+div.stamps img {
+  position: absolute;
+  animation: spin 30s linear infinite;
+}
+

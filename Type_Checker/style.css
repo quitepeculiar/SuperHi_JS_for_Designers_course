@@ -1,112 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Texturina:ital,opsz,wght@0,12..72,100;0,12..72,200;0,12..72,300;0,12..72,400;0,12..72,500;0,12..72,600;0,12..72,700;0,12..72,800;0,12..72,900;1,12..72,100;1,12..72,200;1,12..72,300;1,12..72,400;1,12..72,500;1,12..72,600;1,12..72,700;1,12..72,800;1,12..72,900&display=swap');
 
 @font-face {
-	font-family: 'Faune';
-	font-weight: 400;
-	src: url(faune-regular.woff2), url(faune-regular.woff);
+  font-family: 'Faune';
+  font-weight: 400;
+  src: url(faune-regular.woff2), url(faune-regular.woff);
 }
 
 @font-face {
-	font-family: 'Faune';
-	font-weight: 400;
-	font-style: italic;
-	src: url(faune-italic.woff2), url(faune-regular.woff);
+  font-family: 'Faune';
+  font-weight: 400;
+  font-style: italic;
+  src: url(faune-italic.woff2), url(faune-regular.woff);
 }
 
 @font-face {
-	font-family: 'Faune';
-	font-weight: 700;
-	src: url(faune-bold.woff2), url(faune-bold.woff);
+  font-family: 'Faune';
+  font-weight: 700;
+  src: url(faune-bold.woff2), url(faune-bold.woff);
 }
 
 body {
-	font-family: 'Faune', Arial;
-	font-size: 16px;
-	line-height: 1.5;
+  font-family: 'Faune', Arial;
+  font-size: 16px;
+  line-height: 1.5;
 
-	background-color: #2a2a2a;
-	color: #ffffff;
-	margin: 0 0 0 350px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  margin: 0 0 0 280px;
 }
 
 section.options {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 280px;
-	background-color: #2a2a2a;
-	border-right: 1px solid rgba(255, 255, 255, 0.1);
-	padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 280px;
+  background-color: #2a2a2a;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px;
 }
 
 h1 {
-	font-weight: 700;
-	font-size: 24px;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 div.option {
-	margin: 20px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 div.option-checkbox {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 label {
-	display: block;
-	margin: 0 0 5px 0;
+  display: block;
+  margin: 0 0 5px 0;
 }
 
 label span {
-	float: right;
-	font-style: italic;
+  float: right;
+  font-style: italic;
 }
 
 input[type='text'] {
-	width: 100%;
-	background-color: #575757;
-	border: none;
-	color: #ffffff;
-	padding: 5px 7px 5px 7px;
-	outline-color: #ee0073;
+  width: 100%;
+  background-color: #575757;
+  border: none;
+  color: #ffffff;
+  padding: 5px 7px 5px 7px;
+  outline-color: #ee0073;
 }
 
 input[type='range'] {
-	width: 100%;
+  width: 100%;
 }
 
 select {
-	width: 100%;
+  width: 100%;
 }
 
 div.colors {
-	display: flex;
+  display: flex;
 }
 
 div.colors div {
-	height: 30px;
-	width: 30px;
-	border: 2px solid rgba(255, 255, 255, 0.25);
-	border-radius: 50%;
-	text-align: center;
-	margin: 5px 10px 0 0;
-	transition: border 0.3s;
+  height: 30px;
+  width: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  text-align: center;
+  margin: 5px 10px 0 0;
+  transition: border 0.3s;
 }
 
 div.colors div.selected {
-	border: 2px solid #ffffff;
+  border: 2px solid #ffffff;  
 }
 
 textarea.output {
-	font-size: 64px;
-	width: 100%;
-	background: none;
-	color: #ffffff;
-	border: none;
-	outline: none;
-	min-height: 100vh;
-	padding: 40px;
+  font-size: 64px;
+  width: 100%;
+  background: none;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  min-height: 100vh;
+  padding: 40px;
 }
+
+/* input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #ee0073;
+  outline: none;
+  transition: 0.25s;
+}
+
+input[type="checkbox"]:checked {
+  color: #ffffff;
+} */
